@@ -42,6 +42,7 @@ export class AddComponent implements OnInit, AfterViewInit {
 
     submit() {
         this.mapService.locations.push(this.location);
+        this.location = {title: '', description: ''};
         this.router.navigate(['map']);
     }
 }
