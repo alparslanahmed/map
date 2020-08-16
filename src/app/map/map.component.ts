@@ -15,6 +15,7 @@ export class MapComponent implements OnInit {
 
     @ViewChild('search')
     public searchElementRef: ElementRef;
+    private address: any;
 
     constructor(private mapsAPILoader: MapsAPILoader,
                 private ngZone: NgZone,
