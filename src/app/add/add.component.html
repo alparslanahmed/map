@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Add Location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="form">
+      <ion-input id="address" #address placeholder="Address"></ion-input>
+      <ion-input placeholder="Title" [(ngModel)]="location.title"></ion-input>
+      <ion-input placeholder="Description" [(ngModel)]="location.description"></ion-input>
+      <ion-button color="primary" expand="block" (click)="submit()">Add Location</ion-button>
+    </div>
+  </div>
+</ion-content>
