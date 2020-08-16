@@ -60,8 +60,8 @@ export class MapComponent implements OnInit {
 
 
     markerDragEnd($event: MouseEvent) {
-        this.latitude = $event.latLng.lat();
-        this.longitude = $event.latLng.lng();
+        this.latitude = $event['latLng'].lat();
+        this.longitude = $event['latLng'].lng();
         this.getAddress(this.latitude, this.longitude);
     }
 
